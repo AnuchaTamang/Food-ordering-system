@@ -179,17 +179,22 @@
   form {
     margin-top: 40px;
   }
-  form input {
+  #searchInput {
+    position: relative;
     padding: 10px 20px;
-    border-color: orangered;
-    outline: none;
-    border-radius: 20px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #feab29;
+    border-radius: 8px;
+    box-sizing: border-box;
   }
-  form .search {
-    padding: 8px 8px 8px 8px;
-    color: #fff;
-    background-color: orangered;
-    border-radius: 50%;
+  #searchResults {
+    margin-top: 10px;
+  }
+  .search i {
+    position: absolute;
+    right: 70%;
+    margin-top: 13px;
   }
   .heroImage {
     width: 100%;
