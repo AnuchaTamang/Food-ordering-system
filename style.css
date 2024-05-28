@@ -41,6 +41,7 @@
     justify-content: space-between;
   }
   #menu {
+    position: relative;
     display: flex;
   }
   #menu li {
@@ -92,6 +93,7 @@
     position: relative;
     display: inline-block;
   }
+
   
   .dropdown-content {
     display: none;
@@ -109,15 +111,14 @@
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content a:hover {
+    background-color: #f1f1f1
+  }
   
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
   
   @media (max-width: 768px) {
     .nav-content {
@@ -179,25 +180,26 @@
     font-family: sans-serif;
   }
   .heroForm {
+    width: 300px;
     margin-top: 40px;
-  }
-  #searchInput {
     position: relative;
     padding: 10px 20px;
-    width: 300px;
-    outline: none;
     font-size: 16px;
     border: 2px solid #feab29;
-    border-radius: 8px;
-    box-sizing: border-box;
+    border-radius: 30px;
+  }
+  #searchInput {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
   }
   #searchResults {
     margin-top: 10px;
   }
-  .search i {
+  .search  {
     position: absolute;
-    right: 70%;
-    margin-top: 13px;
+   right: 20px;
   }
   .heroImage {
     width: 100%;
@@ -307,11 +309,11 @@
     position: absolute;
     background-color: red;
     color: #fff;
-    top: 0;
+    top: -5px;
     right: 0;
-    left: 40px;
-    height: 20px;
-    width: 20px;
+    left: 25px;
+    min-height: 20px;
+    min-width: 20px;
     line-height:20px ;
     border-radius: 50%;
     z-index: 1;
@@ -779,3 +781,6 @@
   /*gallery end*/
   
   
+.btn {
+  border: none;
+}

@@ -18,14 +18,14 @@
     $password = stripslashes($_REQUEST['password']);
     $password = mysqli_real_escape_string($con, $password);
     // Check user is exist in the database
-    $query    = "SELECT * FROM `users` WHERE username='$username'
+    $query    = "SELECT * FROM `user` WHERE username='$username'
                      AND password='" . md5($password) . "'";
     $result = mysqli_query($con, $query) or die(mysqli_error($con));
     $rows = mysqli_num_rows($result);
     if ($rows == 1) {
       $_SESSION['username'] = $username;
       // Redirect to user dashboard page
-      header("Location: dashboard.php");
+      header("Location: ./../home.php");
     } else {
       echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>
@@ -39,7 +39,7 @@
       <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true" />
       <input type="password" class="login-input" name="password" placeholder="Password" />
       <input type="submit" value="Login" name="submit" class="login-button" />
-      <p class="link">Don't have an account? <a style="background-color: none;" href="registration.php">Registration Now</a></p>
+      <p class="link">Don't have an account? <a style="background-color: none;" href="registration.php">Sign up Now</a></p>
     </form>
   <?php
   }
