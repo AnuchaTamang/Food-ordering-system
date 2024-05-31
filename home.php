@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickSnack</title>
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="icon" href="favicon.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <a class="nav-logo" href="home.php"><Span>MeroKhaja</Span>Ghar</a>
+            <a class="nav-logo" href="home.php"><Span>Quick</Span>Snacks</a>
             <div class="nav-content" id="navContent">
                 <ul id="menu">
                     <li><a href="home.php" class="nav__link active">Home</a></li>
@@ -62,6 +64,9 @@
                     <?php
                     }
                     ?>
+            <div class="navClose" id="nav-Close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
 
             </div>
             <div class="box">
@@ -69,9 +74,7 @@
                 <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
             </div>
             </ul>
-            <div class="navClose" id="nav-Close">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
+          
             </div>
             <div class="navToggle" id="nav-Toggle">
                 <i class="fa-solid fa-bars"></i>
@@ -82,7 +85,7 @@
         <div class="hero-container">
             <div class="textHero">
                 <h1>When you are <span>Home Alone and </span>Hungry?</h1>
-                <p>The MeroKhajaGhar is the best website for explore new snacks and Recipe's of food and smoothies it is very simple simple to use and the best way to find new with the help of us.</p>
+                <p>The Quick Snacks is the best website for explore new snacks and Recipe's of food and smoothies it is very simple to use and the best way to find new with the help of us.</p>
                 <form class="heroForm">
                     <input type="text" id="searchInput" placeholder="Search food...">
                     <a class="search" href="#/"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -171,7 +174,7 @@
             </div>
         </div>
         <div class="container">
-            <h1 class="food-header">Enjoy our regular menu</h1>
+            <h1 class="food-header">ENJOY OUR REGULAR MENU</h1>
             <div class="shop-content">
 
                 <div class="food-box">
@@ -292,10 +295,10 @@
     </section>
     <footer>
         <div class="footer-container">
-            <h1>MeroKhaja<span>Ghar</span></h1>
+            <h1>Quick<span>Snacks</span></h1>
             <div class="footer-content">
                 <div class="para">
-                    <p>The MeroKhajaGhar is the best website for explore new snacks and Recipe's of food and smoothies it is very simple simple to use and the best way to find new with the help of us.</p>
+                    <p>The QuickSnack is the best website for explore new snacks and Recipe's of food and smoothies it is very simple to use and the best way to find new with the help of us.</p>
                 </div>
                 <div class="subcribe-input">
                     <h1>Subscribe Our Newsletter</h1>
@@ -325,14 +328,15 @@
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            <p>Designed by <a href="#/">Anucha Tamang.</a></p>
+            <p class="author">Designed by <a href="#/">Anucha Tamang.</a></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/296f844599.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=URL"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
     <script defer src="index.js"></script>
     <script src="search.js"></script>
 </body>

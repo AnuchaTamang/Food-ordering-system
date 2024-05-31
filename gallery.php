@@ -14,7 +14,7 @@
 <body id="gallery">
     <header>
         <nav class="navbar">
-            <a class="nav-logo" href="home.php"><Span>MeroKhaja</Span>Ghar</a>
+            <a class="nav-logo" href="home.php"><Span>Quick</Span>Snacks</a>
             <div class="nav-content" id="navContent">
                 <ul id="menu">
                     <li><a href="home.php" class="nav__link">Home</a></li>
@@ -122,18 +122,19 @@
     </section>
     <footer>
         <div class="footer-container">
-            <h1>MeroKhaja<span>Ghar</span></h1>
+            <h1>Quick<span>Snacks</span></h1>
             <div class="footer-content">
                 <div class="para">
-                    <p>The MeroKhajaGhar is the best website for explore new snacks and Recipe's of food and smoothies it is very simple simple to use and the best way to find new with the help of us.</p>
+                    <p>The QuickSnack is the best website for explore new snacks and Recipe's of food and smoothies it is very simple to use and the best way to find new with the help of us.</p>
                 </div>
                 <div class="subcribe-input">
                     <h1>Subscribe Our Newsletter</h1>
-                    <form class="subsInput">
+                    <form class="subsInput" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="5368b009-b01b-4460-b643-6c4f85b023bf">
                         <div class="group-input">
-                            <input class="subs-input" type="email"></input>
+                            <input class="subs-input" name="email" type="email" required></input>
                             <label class="placeholder">Email address</label>
-                            <button class="subs">Subscribe</button>
+                            <button type="submit" class="subs">Subscribe</button>
                         </div>
                     </form>
                 </div>
@@ -148,13 +149,13 @@
                     </li>
                 </ul>
                 <div class="icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-square-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-twitter"></i>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            <p>Designed by <a href="#/">Anucha Tamang.</a></p>
+            <p class="author">Designed by <a href="#/">Anucha Tamang.</a></p>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/296f844599.js" crossorigin="anonymous"></script>

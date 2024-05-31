@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <a class="nav-logo" href="home.php"><Span>MeroKhaja</Span>Ghar</a>
+            <a class="nav-logo" href="home.php"><Span>Quick</Span>Snacks</a>
             <div class="nav-content" id="navContent">
                 <ul id="menu">
                     <li><a href="home.php" class="nav__link">Home</a></li>
@@ -78,8 +78,97 @@
         </nav>
     </header>
     <div>
-        <h1>Variuos</h1>
+       <div class="various_page">
+        <div class="various_container">
+          <div class="services_content">
+            <div class="services_card">
+                <div class="services_icon">
+                <i class="fa-solid fa-comments"></i>
+                </div>
+                <div class="services_body">
+                    <h3>Quick Responce</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.vLorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="services_card">
+                <div class="services_icon">
+                <i class="fa-solid fa-box"></i>
+                </div>
+                <div class="services_body">
+                    <h3>Free Sample</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.vLorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="services_card">
+                <div class="services_icon">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <div class="services_body">
+                    <h3>Unconditional Refund</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.vLorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="services_card">
+                <div class="services_icon">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                </div>
+                <div class="services_body">
+                    <h3>Fast Delivery</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.vLorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="services_card">
+                <div class="services_icon">
+                <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <div class="services_body">
+                    <h3>Affordable Price</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.vLorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+          </div>  
+        </div>
+       </div>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <h1>Quick<span>Snacks</span></h1>
+            <div class="footer-content">
+                <div class="para">
+                    <p>The QuickSnack is the best website for explore new snacks and Recipe's of food and smoothies it is very simple to use and the best way to find new with the help of us.</p>
+                </div>
+                <div class="subcribe-input">
+                    <h1>Subscribe Our Newsletter</h1>
+                    <form class="subsInput" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="5368b009-b01b-4460-b643-6c4f85b023bf">
+                        <div class="group-input">
+                            <input class="subs-input" name="email" type="email" required></input>
+                            <label class="placeholder">Email address</label>
+                            <button type="submit" class="subs">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="terms">
+                <ul>
+                    <li>
+                        <a href="#/">Terms & Condition</a>
+                    </li>
+                    <li>
+                        <a href="#/">Privacy Policy</a>
+                    </li>
+                </ul>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <p class="author">Designed by <a href="#/">Anucha Tamang.</a></p>
+        </div>
+    </footer>
     <script src="https://kit.fontawesome.com/296f844599.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

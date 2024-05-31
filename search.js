@@ -14,8 +14,8 @@ const searchInput = document.getElementById('searchInput');
 
     // Simulated data for demonstration
     const data = [
-      "Apple", "Banana", "Orange", "Pear", "Pineapple", "Grapes",
-      "Mango", "Strawberry", "Blueberry", "Raspberry", "Watermelon"
+      "Mo:Mo", "Salad", "Rice", "Noodles", "Pulao", "Sandwich",
+      "Burger", "Chips", "Pizza", "Keema Noodles",
     ];
 
     const filteredResults = data.filter(item => {

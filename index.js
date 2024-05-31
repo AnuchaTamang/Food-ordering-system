@@ -190,7 +190,7 @@ function addCart() {
       alert(data.message);
     }
   })
-  .catch(error => console.error('Error adding to cart:', error));
+  .catch(error => console.error('Error adding to carts:', error));
 }
 
 function createCartProduct(title, price, imgSrc, quantity) {
