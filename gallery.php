@@ -14,10 +14,10 @@
 <body id="gallery">
     <header>
         <nav class="navbar">
-            <a class="nav-logo" href="home.php"><Span>Quick</Span>Snacks</a>
+            <a class="nav-logo" href="index.php"><Span>Quick</Span>Snacks</a>
             <div class="nav-content" id="navContent">
                 <ul id="menu">
-                    <li><a href="home.php" class="nav__link">Home</a></li>
+                    <li><a href="index.php" class="nav__link">Home</a></li>
 
 
                     <li><a href="gallery.php" class="nav__link">Gallery</a></li>
@@ -103,19 +103,19 @@
                     <img src="image/pizza.jpg" alt="">
                 </div>
                 <div class="gallery image8">
-                    <img src="image/secfood.jpg" alt="">
+                    <img src="image/keemaNoodles.jpg" alt="">
                 </div>
                 <div class="gallery image9">
-                    <img src="image/firstfood.jpg" alt="">
+                    <img src="image/momo1.jpg" alt="">
                 </div>
                 <div class="gallery image10">
                     <img src="image/pizza.jpg" alt="">
                 </div>
                 <div class="gallery image11">
-                    <img src="image/secfood.jpg" alt="">
+                    <img src="image/burger.jpg" alt="">
                 </div>
                 <div class="gallery image12">
-                    <img src="image/firstfood.jpg" alt="">
+                    <img src="image/pizza.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -162,7 +162,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=URL"></script>
-    <script src="index2.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

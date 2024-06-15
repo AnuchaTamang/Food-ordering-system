@@ -18,10 +18,10 @@
 <body>
     <header>
         <nav class="navbar">
-            <a class="nav-logo" href="home.php"><Span>Quick</Span>Snacks</a>
+            <a class="nav-logo" href="index.php"><Span>Quick</Span>Snacks</a>
             <div class="nav-content" id="navContent">
                 <ul id="menu">
-                    <li><a href="home.php" class="nav__link active">Home</a></li>
+                    <li><a href="index.php" class="nav__link">Home</a></li>
 
 
                     <li><a href="gallery.php" class="nav__link">Gallery</a></li>
@@ -35,7 +35,7 @@
                     if (isset($_SESSION["username"])) {
                     ?>
                         <p style="position: absolute;
-                            top: 8px;
+                            top: 0px;
                             background-color: white;
                             padding: 3px 6px;
                             right: -65px;
@@ -98,56 +98,72 @@
         </div>
     </section>
     <section>
-        <div class="owl-carousel">
-            <div class="item">
-                <div class="foodimages">
-                    <img src="image/salad.jpg" alt="">
-                    <h4>Salad</h4>
-                    <div class="name">
-                    </div>
-                </div>
+        <!-- Swiper -->
+        <div class="container_swiper">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="item">
+            <div class="item_image">
+                <img src="image/burger.jpg" alt="">
             </div>
-            <div class="item">
-                <div class="foodimages">
-                    <img src="image/rice.jpg" alt="">
-                    <h4>Rice</h4>
-                    <div class="name">
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="foodimages">
-                    <img src="image/chips.jpg" alt="">
-                    <h4>Chips</h4>
-                    <div class="name">
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="foodimages">
-                    <img src="image/burger.jpg" alt="">
-                    <h4>Burger</h4>
-                    <div class="name">
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="foodimages">
-                    <img src="image/pizza.jpg" alt="">
-                    <h4>Pizza</h4>
-                    <div class="name">
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="foodimages">
-                    <img src="image/sandwich.jpg" alt="">
-                    <h4>Sandwich</h4>
-                    <div class="name">
-                    </div>
-                </div>
-            </div>
+            <h3>Burger</h3>
         </div>
+      </div>
+      <div class="swiper-slide">
+      <div class="item">
+            <div class="item_image">
+                <img src="image/pizza.jpg" alt="">
+            </div>
+            <h3>Pizza</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+      <div class="item">
+            <div class="item_image">
+                <img src="image/keemaNoodles.jpg" alt="">
+            </div>
+            <h3>Noodles</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+      <div class="item">
+            <div class="item_image">
+                <img src="image/rice.jpg" alt="">
+            </div>
+            <h3>Rice</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+      <div class="item">
+            <div class="item_image">
+                <img src="image/momo1.jpg" alt="">
+            </div>
+            <h3>MO:MO</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+      <div class="item">
+            <div class="item_image">
+                <img src="image/salad.jpg" alt="">
+            </div>
+            <h3>Salad</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+      <div class="item">
+            <div class="item_image">
+                <img src="image/momo.jpg" alt="">
+            </div>
+            <h3>MO:MO</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-next foodNext"><i class="fa-solid fa-angle-right"></i></div>
+    <div class="swiper-button-prev foodPrev"><i class="fa-solid fa-angle-left"></i></div>
+  </div>
+  <!-- Swiper JS -->
     </section>
     <section>
         <div class="nav">
@@ -165,7 +181,7 @@
                     <div class="total-price">Rs.0</div>
                 </div>
 
-                <a href="./loginsystem/checkout.php" class="btn-buy">Place Order</a>
+                <a href="payment-form.php" class="btn-buy">Place Order</a>
 
                 <ion-icon name="close" id="cart-close"></ion-icon>
 
@@ -179,7 +195,7 @@
 
                 <div class="food-box">
                     <div class="pic">
-                        <img src="image/burger.jpg" class="food-img">
+                        <img src="image/momo.jpg" class="food-img">
                     </div>
                     <h2 class="food-title">MO:MO</h2>
                     <i id="a" class="fa-solid fa-star"></i>
@@ -187,44 +203,44 @@
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="b" class="fa-regular fa-star"></i>
-                    <p class="food-price">RS. </p>
+                    <p class="food-price">RS.120 </p>
                     <button class="add-cart">Add to cart</button>
                 </div>
 
 
                 <div class="food-box">
-                    <div class="pic"><img src="image/chips.jpg" class="food-img"></div>
+                    <div class="pic"><img src="image/keemaNoodles.jpg" class="food-img"></div>
                     <h2 class="food-title">Noodles</h2>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="b" class="fa-regular fa-star"></i>
-                    <p class="food-price">Rs.65</p>
+                    <p class="food-price">Rs.200</p>
                     <button class="add-cart">Add to cart</button>
                 </div>
 
                 <div class="food-box">
-                    <div class="pic"><img src="image/noodles.jpg" class="food-img"></div>
+                    <div class="pic"><img src="image/chips.jpg" class="food-img"></div>
                     <h2 class="food-title">Chips</h2>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="b" class="fa-regular fa-star"></i>
-                    <p class="food-price">Rs.80</p>
+                    <p class="food-price">Rs.50</p>
                     <button class="add-cart">Add to cart</button>
                 </div>
 
                 <div class="food-box">
-                    <div class="pic"><img src="image/pizza.jpg" class="food-img"></div>
+                    <div class="pic"><img src="image/rice.jpg" class="food-img"></div>
                     <h2 class="food-title">Rice</h2>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="b" class="fa-regular fa-star"></i>
-                    <p class="food-price">Rs.55</p>
+                    <p class="food-price">Rs.250</p>
                     <button class="add-cart">Add to cart</button>
                 </div>
 
@@ -236,7 +252,7 @@
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="b" class="fa-regular fa-star"></i>
-                    <p class="food-price">Rs.25</p>
+                    <p class="food-price">Rs.160</p>
                     <button class="add-cart">Add to cart</button>
                 </div>
 
@@ -248,20 +264,20 @@
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="b" class="fa-regular fa-star"></i>
-                    <p class="food-price">Rs.150</p>
+                    <p class="food-price">Rs.80</p>
                     <button class="add-cart">Add to cart</button>
                 </div>
 
 
                 <div class="food-box">
-                    <div class="pic"><img src="image/burger.jpg" class="food-img"></div>
+                    <div class="pic"><img src="image/pizza.jpg" class="food-img"></div>
                     <h2 class="food-title">Pizza</h2>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="b" class="fa-regular fa-star"></i>
-                    <p class="food-price">Rs.65</p>
+                    <p class="food-price">Rs.250</p>
                     <button class="add-cart">Add to cart</button>
                 </div>
 
@@ -274,7 +290,7 @@
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="a" class="fa-solid fa-star"></i>
                     <i id="b" class="fa-regular fa-star"></i>
-                    <p class="food-price">Rs.65</p>
+                    <p class="food-price">Rs.150</p>
                     <button class="add-cart">Add to cart</button>
                 </div>
             </div>

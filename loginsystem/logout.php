@@ -2,6 +2,6 @@
 session_start();
 // Destroy session
 if (session_destroy()) {
-  // Redirecting To Home Page
-  header("Location: ./../home.php");
+  // Redirecting To  Page
+  header("Location: ./../index.php");
 }

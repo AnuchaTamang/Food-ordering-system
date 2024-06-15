@@ -9,7 +9,7 @@ const navlinkPathname = new URL(navLinkEl.href).pathname;
 
   console.log(navLinkEl.href);
 
-  if ((windowPathname === navlinkPathname) || (windowPathname === 'home.php' && navlinkPathname === '/')) {
+  if ((windowPathname === navlinkPathname) || (windowPathname === 'index.php' && navlinkPathname === '/')) {
   navLinkEl.classList.add('active');
   }
 });
@@ -34,31 +34,36 @@ if (navClose) {
 //Navbar end
 
 //carousel start
-
-$(".owl-carousel").owlCarousel({
+var swiper = new Swiper(".mySwiper", {
   loop: true,
-  margin: 10,
-  autoplay: true,
-  nav: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-      nav: true,
-    },
-    400: {
-      items: 2,
-      nav: true,
-    },
-    600: {
-      items: 3,
-      nav: true,
-    },
-    1000: {
-      items: 6,
-      nav: true,
-    }, 
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".foodNext",
+    prevEl: ".foodPrev",
   },
+  breakpoints:{
+    1200:{
+      slidesPerView: 6,
+      spaceBetween: 30,
+    },
+    1024:{
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },
+    768:{
+      slidesPerView:3,
+      spaceBetween: 30,
+    },
+    525:{
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    320:{
+      slidesPerView: 1,
+      spaceBetween: 30,
+    }
+  }
 });
 
 //carousel end
@@ -203,7 +208,7 @@ function createCartProduct(title, price, imgSrc, quantity) {
           <div class="cart-price">${price}</div>
           <div class="cart-amt">Rs.${price * quantity}</div>
         </div>
-        <input type="number" value="${quantity}" class="cart-quantity">
+        <input type="number" value="${quantity}" class="cart-quantity" min="0" max="10">
       </div>
       <ion-icon name="trash" class="cart-remove"></ion-icon>
     </div>
@@ -239,3 +244,39 @@ function updateTotal() {
 
 //card end
 
+//make a searchInput
+const searchInput = document.getElementById('searchInput');
+  const searchResults = document.getElementById('searchResults');
+
+  searchInput.addEventListener('input', function() {
+    const searchText = this.value.trim().toLowerCase();
+
+    // Clear previous search results
+    searchResults.innerHTML = '';
+
+    if (searchText.length === 0) {
+      return;
+    }
+
+    // Simulated data for demonstration
+    const data = [
+      "Mo:Mo", "Salad", "Rice", "Noodles", "Pulao", "Sandwich",
+      "Burger", "Chips", "Pizza", "Keema Noodles",
+    ];
+
+    const filteredResults = data.filter(item => {
+      return item.toLowerCase().includes(searchText);
+    });
+
+    if (filteredResults.length === 0) {
+      searchResults.innerHTML = '<p>No results found</p>';
+    } else {
+      const ul = document.createElement('ul');
+      filteredResults.forEach(item => {
+        const p = document.createElement('p');
+        p.textContent = item;
+        ul.appendChild(p);
+      });
+      searchResults.appendChild(ul);
+    }
+  });
